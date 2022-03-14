@@ -1,0 +1,33 @@
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 250px));
+  grid-gap: 12px;
+  justify-content: center;
+  padding: 16px;
+}
+
+.button {
+  border: 1px solid #eee;
+  outline: none;
+  background: transparent;
+}
+
+.button:hover {
+  background: #efefef;
+}
+
+.svgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 500px;
+  border: 1px solid #eee;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.svgContainer svg {
+  max-width: 100%;
+  max-height: 100%;
+}
