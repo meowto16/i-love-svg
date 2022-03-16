@@ -1,0 +1,47 @@
+.catRunner {
+  display: block;
+  width: 750px;
+  height: 375px;
+  background-repeat: no-repeat;
+  background-image: url("/public/images/cat-runner.jpeg");
+
+  animation: catRunning 0.6s steps(1) infinite;
+}
+
+@keyframes catRunning {
+  from {
+    background-position: 0px 0px;
+  }
+
+  12.5% {
+    background-position: -750px 0px;
+  }
+
+  25% {
+    background-position: 0px -375px;
+  }
+
+  37.5% {
+    background-position: -750px -375px;
+  }
+
+  50% {
+    background-position: 0px -750px;
+  }
+
+  62.5% {
+    background-position: -750px -750px;
+  }
+
+  75% {
+    background-position: 0px -1125px
+  }
+
+  87.5% {
+    background-position: -750px -1125px
+  }
+
+  100% {
+    background-position: 0px 0px
+  }
+}
