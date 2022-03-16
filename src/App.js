@@ -4,15 +4,17 @@ import classes from './App.module.css'
 
 const Heart = React.lazy(() => import('./experiments/heart'))
 const VK = React.lazy(() => import('./experiments/vk'))
+const AnatomyOfSvg = React.lazy(() => import('./experiments/anatomy-of-svg'))
 
 const SvgList = {
   'heart': Heart,
   'vk': VK,
+  'anatomy-of-svg': AnatomyOfSvg,
   'none': () => <>Выберите SVG</>
 }
 
 const App = () => {
-  const [activeSvg, setActiveSvg] = useState('vk')
+  const [activeSvg, setActiveSvg] = useState('anatomy-of-svg')
 
   const ActiveSvgComponent = SvgList[activeSvg]
 
